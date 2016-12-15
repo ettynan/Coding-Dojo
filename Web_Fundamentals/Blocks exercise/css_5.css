@@ -1,6 +1,7 @@
 *{
  margin: 10px;
  padding: 5px;
+ outline: 10px red dotted;
 }
 #wrapper{
  width: 950px;
