@@ -1,0 +1,84 @@
+*/{
+    margin:0;
+    padding:0;
+}
+
+
+#mainWrapper {
+    border: 2px solid blue;
+    width: 1000px;
+    height: 1000px;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 12pt;
+}
+
+    .mainBoxes {
+        width: 24%;
+        height:20%;
+        border: 2px solid blue;
+        background-color: purple;
+        margin-bottom: 5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        #chainmail{
+            width:40%;
+            height: 50%;
+            margin:0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        button{
+            width: 17%;
+            height: 20%;
+            background-color: grey;
+            display: inline-block;
+            font-size: 6pt;
+            text-align: center;
+        }
+
+        #puppy{
+            width: 40%;
+            height: 50%;
+            margin: 0%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #elephant{
+            width: 40%;
+            height: 50%;
+            margin: 0%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #kitten{
+            height: 50%;
+            margin:0%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+
+    .mainBoxes2 {
+        width: 24%;
+        height:20%;
+        border: 2px solid blue;
+        background-color: purple;
+        margin-bottom: 5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+.green{
+    color:green;
+}

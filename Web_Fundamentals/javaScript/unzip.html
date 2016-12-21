@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+            
+            
+           
+            var students = [{first_name:  'Michael', last_name : 'Jordan'},
+                {first_name : 'John', last_name : 'Rosales'},
+                {first_name : 'Mark', last_name : 'Guillen'},
+                {first_name : 'KB', last_name : 'Tonel'} ];
+
+
+            //PART 1
+            //     for(var i = 0; i< studdents.length; i++){
+            //             //console.log(students[i]);
+            //         var str = ''; 
+            //          for(var blah in students[i]){
+            //             str += students[i][blah] + ' '; 
+            //     }
+            //     console.log(str);
+            // }
+           var users = {
+                'Students': [ 
+                    {first_name:  'Michael', last_name : 'Jordan'},
+                    {first_name : 'John', last_name : 'Rosales'},
+                    {first_name : 'Mark', last_name : 'Guillen'},
+                    {first_name : 'KB', last_name : 'Tonel'}
+                ],
+                'Instructors': [
+                    {first_name : 'Michael', last_name : 'Choi'},
+                    {first_name : 'Martin', last_name : 'Puryear'}
+                ]
+                }
+                //Part 2
+                //loop through each key in our object
+                for(var category in users){
+                    console.log(category);
+                    //loop through the array associated to that object
+                    for(var i =0; i< users[category].length; i++){
+                        console.log(users[category][i]);
+                        //loop through the values associated with that object
+                        for(var person in users[category][i]){
+                        console.log(users[category][i][person]);
+                        }
+                    }
+                }
+                            
+                    
+
+	</script>
+    </head>
+<body>
+</body>
+
+</html>
+
+

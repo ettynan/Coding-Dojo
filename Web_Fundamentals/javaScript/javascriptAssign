@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+  var first_Name = "ET";
+  var last_Name = "Awesome";
+  var email = "nope@nope.com";
+  var age = "-100";
+  </body>
+  </html>
