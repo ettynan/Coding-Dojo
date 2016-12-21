@@ -5,11 +5,12 @@
 
 
 #mainWrapper {
-    width: 600px;
-    height: 500px;
+
 }
     #mainWrapper img {
-        width:100%;
+        width: 200px;
+        height: 100px;
+
     }
 
 h1 {
