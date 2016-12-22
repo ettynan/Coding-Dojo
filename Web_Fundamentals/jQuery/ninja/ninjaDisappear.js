@@ -1,34 +1,7 @@
 $(document).ready(function(){
-    $("#first").click(function(){
-        $("#chainmail1").hide();
-     });
 
-    $("#second").click(function(){
-        $("#chainmail2").hide();
-    });
-
-    $("#third").click(function(){
-        $("#chainmail3").hide();
-    });
-
-    $("#fourth").click(function(){
-        $("#chainmail4").hide();
-    });
-
-    $("#fifth").click(function(){
-        $("#chainmail5").hide();
-    });
-
-    $("#sixth").click(function(){
-        $("#chainmail6").hide();
-    });
-
-    $("#seventh").click(function(){
-        $("#chainmail7").hide();
-    });
-
-    $("#eigth").click(function(){
-        $("#chainmail8").hide();
+    $('img').click(function(){
+        $(this).hide();
     });
 
     $("#restore").click(function(){
