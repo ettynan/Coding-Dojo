@@ -1,0 +1,84 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: didot;
+}
+
+#wrapper {
+	height:1000px;
+	width:1000px;
+	background-color:white;
+	padding:40px;
+	background-color: #696969
+}
+
+#wrapper h1{
+	color:#F1EE69;
+	margin-bottom:20px;
+}
+#formBox{
+	color:#F1ECEA;
+	border: 2px dotted #FF852C;
+	width:42%;
+}
+
+.nameForm {
+	width: 100px;
+	height:25px;
+	padding:12px, 20px;
+	display:block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+
+#descBox{
+	width: 400px;
+	height:25px;
+	padding:12px, 20px;
+	display:inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 20px 10px;
+	display:block; 
+}
+
+button{
+	height:25px;
+	width: 100px;
+	display: inline-block;
+	border: 1px solid #BFE0E0;
+	margin-top:20px;
+}
+
+.card{height:200px;
+	width:300px;
+	border: 1px solid #F1EE69;
+	display: inline-block;
+	background-color: #F1ECEA;
+
+}
+#formBox{
+	display: inline-block;
+	margin-right:90px;
+}
+#contactCard{
+	height:200px;
+	width:300px;
+	border: 1px solid #F1EE69;
+	display: inline-block;
+	padding: 10px 20px;
+	vertical-align: top;
+
+
+}
+#contactCard h2{
+	text-align: middle;
+	margin-bottom: 15px
+}
+
+.hide{
+	display:none;
+}

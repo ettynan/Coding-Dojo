@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#mainWrapper {
+    width:970px;
+    height: 1000px;
+}
+
+#fullForm {
+    margin-right: 7%;
+    display: inline-block;  
+    }
+    
+    form{
+        width: 40%;
+        height: 250px;
+        background-color: gray;
+        margin-left: 5%;
+        
+    }
+        .Name{
+            font-size: 12pt;
+            margin: 5% 5% 5% 5%;
+        }
+
+        #firstName{
+
+        }
+
+        #lastName{
+            
+        }
+
+        #description{
+            height: 50px;
+            margin-left: 3%;
+        }
+    
+    #addUser{
+        box-shadow: 1px 1px 0 0 black; 
+        margin-left: 5%;
+
+    }
