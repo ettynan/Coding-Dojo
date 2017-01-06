@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#mainWrapper {
+    width:970px;
+    height: 900px;
+    margin: auto;
+
+}
+
+    #mainContent{
+        width: 70%;
+        height: 100%;
+        display:inline-block;
+    }
+
+    img{
+        width: 10%;
+        display:inline-block;
+    }
+
+    #sideContent{
+        border: 10px solid red;
+        border-bottom: 15px solid red;
+        display: inline-block;
+        vertical-align:top;
+        width: 20%;
+        height: 40%;
+        margin: 10% 0 0 5%;
+    }
+
+*

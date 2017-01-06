@@ -8,77 +8,53 @@
     width:970px;
     height: 600px;
     padding-top: 10%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    border: 2px solid black;
 
 }
-    #selectBox {
-        width: 30%;
-        height: 20%;
-        background-color: grey;
-        border-radius: 10px;
-        margin-left: 35%;
-        text-align: center;
-        border: 3px solid white;
-        position: relative;
-        z-index: 1;
 
+    #leftPanel {
+    margin-right: 7%;
+    display: inline-block;  
     }
 
-    button {
-        width: 25%;
-        height: 20%;
-        color: black;
-        border-radius: 10px;
-        border: 1px solid white;
-        margin-top: 4px;
-    }
-
-    img {
-        position: relative;
-        z-index: 0;
-    }
-
-h1 {
-    text-align: center;
-    color: #F0A038;
-    font-size: 18pt;
-    text-shadow: 1px 1px #FEFEFE;
-    padding-top: 10%;
-}
-
-
-    /*.mainBoxes {
-        width: 24%;
-        height:20%;
-        margin-bottom: 5%;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .mainBoxes img {
+    #userData{
         width: 100%;
-        height:100%;
-        display: inline-block;
     }
-
-        #chainmail{
-            width:100%;
-            height: 100%;
-            margin:0;
-            display: inline-block;
-            vertical-align: middle;
+    
+    form{
+        width: 31%;
+        height: 250px;
+        background-color: gray;
+        margin-left: 5%;
+        
+    }
+        .info{
+            font-size: 12pt;
+            margin: 5% 5% 5% 5%;
         }
 
-        #restore{
-            width: 5%;
-            height: 3%;
-            background-color: grey;
+        #firstName{
             display: inline-block;
-            font-size: 6pt;
-            text-align: center;
         }
 
+        #lastName{
+            display: inline-block;
+        }
 
-    }*/
+        #email{
+            display: inline-block;
+            width: 70%;
+        }
+
+        #phoneNum{
+            display: inline-block;
+            width: 48%;
+        }
+
+        #addUser{
+            box-shadow: 1px 1px 0 0 black; 
+            background: linear-gradient(white, gray); 
+            margin-left: 20%;
+        }
+
+*/

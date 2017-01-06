@@ -4,7 +4,7 @@
     <!-- <meta charset="utf-8"> -->
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script type="text/javascript" src="Contacts.js"></script>
+    <script type="text/javascript" src="Contact.js"></script>
     <link rel="stylesheet" type="text/css" href="Card.css">
 
   </head>
@@ -12,17 +12,17 @@
 
 <div id ='mainWrapper'><!--beginning of Wrapper-->
         <!--selectBox begin-->
-    <div id="fullForm"> <!--full form begin -->
+    <div id="leftPanel"> <!--leftPanel begin -->
         <form>
             <label>First Name</label><!--first name label-->
-            <input id='firstName' class= 'Name' name='First Name' type='text'/><!--input box for first name-->
+            <input id='firstName' class= 'Name' name='First Name' type='text' placeholder= "First Name"/><!--input box for first name-->
             <label>Last Name</label><!--Second name label-->
-            <input id='lastName' class='Name' name='Last Name' type='text'/><!--input box for last name-->
+            <input id='lastName' class='Name' name='Last Name' type='text' placeholder= "Last Name"/><!--input box for last name-->
             <label>Description</label><!--Description label-->
-            <input id='description' name='Description' type='text'/><!--input box for descrption-->
+            <textarea id='description'></textarea><!--input box for descrption-->
         </form>
             <button id='addUser'>Add User</button><!-- add user button-->
-    </div><!--full form end -->
+    </div><!--leftPanel end -->
     <div id='rightPanel'>
 
 

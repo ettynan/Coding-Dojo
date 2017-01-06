@@ -9,11 +9,11 @@
     height: 1000px;
 }
 
-#fullForm {
+#leftPanel {
     margin-right: 7%;
     display: inline-block;  
     }
-    
+ 
     form{
         width: 40%;
         height: 250px;
@@ -39,8 +39,24 @@
             margin-left: 3%;
         }
     
-    #addUser{
-        box-shadow: 1px 1px 0 0 black; 
-        margin-left: 5%;
+        #addUser{
+            box-shadow: 1px 1px 0 0 black; 
+            margin-left: 5%;
+        }
 
+#rightPanel {
+    display: inline-block;  
+    width: 50%;
+    height: 40%;
+
+}
+
+    #card{
+        width: 30%;
+        height: 30%;
+        border: 1px solid black;
+    }
+
+    #back{
+        display: none;
     }

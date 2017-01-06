@@ -13,25 +13,38 @@
 
 <div id ='mainWrapper'><!--beginning of Wrapper-->
         <!--selectBox begin-->
+        <div id="leftPanel"> <!--leftPanel begin -->
+            <table class="userData">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
 
-  <table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
-</table>
-    </div>
+                <tbody>
+
+                    
+                </tbody>
+            </table>
+
+            
+            <form action="process.php" method="post">
+                <label>First Name</label><!--first name label-->
+                <input id='firstName' class= 'info' name='First Name' type='text' placeholder= "First Name"/><!--input box for first name-->
+                <label>Last Name</label><!--Second name label-->
+                <input id='lastName' class='info' name='Last Name' type='text' placeholder= "Last Name"/><!--input box for last name-->
+                <label>Email</label><!--Email label-->
+                <input id='email' class='info' name='Email' type='text' placeholder= "Email address"/><!--input box for email-->
+                <label>Phone Number</label><!--Phone number label-->
+                <input id='phoneNum' class='info' name='Phone Number' type='text' placeholder= "Phone number"/><!--input box for phone number-->
+                <button id='addUser'>Add User</button><!-- add user button-->
+            </form>
+
+            
+            
+        </div><!--leftPanel end -->
+  
 
 
 </div><!--end of wrapper --> -->
