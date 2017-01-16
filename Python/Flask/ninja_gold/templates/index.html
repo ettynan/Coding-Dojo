@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='number.css')}}">
+</head>
+
+<body>
+
+    <div>
+        Farm
+        <form action="/process_money" method="post">
+            <input type="hidden" name="building" value="farm" />
+            <input type="submit" value="Find Gold!" />
+        </form>
+    </div>
+    <div>
+        Cave
+        <form action="/process_money" method="post">
+            <input type="hidden" name="building" value="cave" />
+            <input type="submit" value="Find Gold!" />
+        </form>
+    </div>
+    <div>
+        House
+        <form action="/process_money" method="post">
+            <input type="hidden" name="building" value="house" />
+            <input type="submit" value="Find Gold!" />
+        </form>
+    </div>
+    <div>
+        Casino
+        <form action="/process_money" method="post">
+            <input type="hidden" name="building" value="casino" />
+            <input type="submit" value="Find Gold!" />
+        </form>
+    </div>
+    <div>
+        {{ session['activities'] }}
+    </div>
+</body>
+
+</html>

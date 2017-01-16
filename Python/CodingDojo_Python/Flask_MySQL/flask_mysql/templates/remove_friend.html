@@ -1,0 +1,24 @@
+<<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Delete a friend</h1>
+    <p>ID: {{ update_friend['id'] }}</p>
+    <p>First Name: {{ update_friend['first_name'] }}</p>
+    <p>Last Name: {{ update_friend['last_name'] }}</p>
+    <p>Occupation: {{ update_friend['occupation'] }}</p>
+    <hr>
+    <form action= {{ '/remove_friend/' + friend_id }} methods=['POST']>
+        <!--make sure the varriable brakets are used here since html would not know what <friends> is-->
+        <label for="first_name">First Name:<input type="text" name="first_name" id="first_name"></label>
+        <label for="last_name">Last Name:<input type="text" name="last_name" id="last_name"></label>
+        <label for="occupation">Occupation:<input type="text" name="occupation" id="occupation"></label>
+        <input type="submit" value="Add">
+    </form>
+  
+</body>
+
+</html>

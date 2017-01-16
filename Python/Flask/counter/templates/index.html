@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Counter page hit</title>
+        
+    </head>
+    <body>
+        <div id="content">
+            <h3>{{session['counter']}}</h3>
+            <form action = "/Add2">
+                <button>Add 2</button>
+            </form>
+            <form action ='/resetSession'>
+                <button>Reset</button>
+            </form>
+            
+            <!--<input type="submit" value="Reset">-->
+        </div>
+    </body>
+</html>
