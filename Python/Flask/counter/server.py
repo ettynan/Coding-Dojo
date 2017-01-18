@@ -11,7 +11,6 @@ def rand_generator():
 def index():
     if 'randomgen' not in session:
         session['randomgen'] = 0
-    if
     return render_template("index.html") 
 
 
