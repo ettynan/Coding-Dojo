@@ -19,4 +19,9 @@ class Point(object):
         return (self.x**2 + self.y**2) ** 0.5
 
 class Cat(object):
-    pass
+    def __init__(self, color, type, age):
+        self.color = color
+        self.type = type
+        self.age = age
+
+
