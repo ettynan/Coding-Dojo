@@ -2,7 +2,7 @@
 
 
 print "Scores and Grades"
-for i in range (0,10):
+for i in range(0,10):
     data = raw_input("Input score: ")
     try: 
         score = int(data)
@@ -18,7 +18,7 @@ for i in range (0,10):
         elif(score >= 60):
                 grade = "D"
         else:
-                    print "Invalid score"
+                print "Invalid score"
         print "Score: %d; Your grade is %s" %(score, grade)
 
 print "End of the program. Bye!"
