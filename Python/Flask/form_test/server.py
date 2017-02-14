@@ -5,7 +5,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 #this route will handle our form submission
-#notice how we defined which HTTP methos are allowed byt his route
+#notice how we defined which HTTP methods are allowed byt his route
 @app.route('/users', methods=['POST'])
 def create_user():
     return render_template("user.html",
