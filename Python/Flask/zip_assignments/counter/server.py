@@ -12,13 +12,14 @@ def index():
     #this route will handle our form submission 
     return render_template("index.html") 
 
-@app.route('/Add2') 
-def Add2(): #counts by 2
+@app.route('/Add2')
+def Add2():
     session['counter'] += 2
     return render_template("index.html") 
 
 @app.route('/resetSession')
 def resetSession():
+    #session.clear()
     session["counter"] = 0
     return render_template("index.html")
 
