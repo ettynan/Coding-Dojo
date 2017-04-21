@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>Made</th>
+                <th>Updated</th>
+            </tr>
+            {% for idx in emails %}
+            <tr>
+                <td>{{ idx.email }}</td>
+                <td>{{ idx.created_at }}</td>
+                <td>{{ idx.updated_at }}</td>
+                <td><form action = "remove/{{idx.id}}" method = "POST">
+                {% csrf_token %}
+                <input class = "button-primary" type="submit" name="submit" value="Remove">
+                </form></td>
+            </tr>
+             {% endfor %}
+        </table>
+    </body>
+</html>
