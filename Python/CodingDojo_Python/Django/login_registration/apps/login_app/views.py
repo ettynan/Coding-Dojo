@@ -13,38 +13,44 @@ def index(request):
 
 def process(request):
     print 'b', request.POST
-
-    valid, errors, info = User.objects.validate_user(request.POST)
+    # request.POSt to models. models sharpie it label data
+    valid, errors = User.objects.validate_user(request.POST) 
 
     if valid: #if they have followed all the rules and it validates, it will allow them forward
         print valid, errors
-        request.session['first_name'] = errors['first_name']
-        return redirect('/success')
+        request.session.first_name = errors.first_name
+        # context = {
+        #     'users':User.objects.all()
+        # }
+        return render(request, 'login_app/success.html')
+
     else: #if they have any validation errors they cannot move forward
         for error in errors:
-            messages.error(request, error, info)
-        return redirect('/')
+            messages.error(request, error)
+    return redirect('/')
 
-def success(request):
+def login(request):
     print 'c'
-    if not request.session.get['first_name']:
-        messages.error(request, 'You must be logged in first!')
-        return redirect('login:index')
-    messages.success(request, "You have logged in successfully")
-    context = {
-        'users': User.objects.all()
-    }
-    return render(request, 'login_app/success.html', context)
+    valid, errors = User.objects.validate_login(request.POST)
+    if valid is True: #if they have followed all the rules and it validates, will move forward
+        print valid, errors
+        request.session.first_name = errors.first_name
+        # context = {
+        #     'users':User.objects.all()
+        # }
+        return render(request, 'login_app/success.html')
 
-# def login(request):
-#     print 'c'
-#     context = {
-#         'users': User.objects.all()
-#     }
-#     return render(request, 'login_app/success.html', context)
+    else: #if they have any validation errors they cannot move forward
+        for error in errors:
+            messages.error(request, error)
+        return redirect('/')
 
 def remove(request, id):
     print 'd'
     if request.method == "POST":
         User.objects.filter(id=id).delete()
+    return redirect('/login')
+
+def clear(request):
+    request.session.clear()
     return redirect('/')
